@@ -1,0 +1,31 @@
+.app-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  line-height: normal;
+  text-transform: uppercase;
+  background-color: var(--btn-primary);
+  color: white;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color .2s ease;
+
+  span {
+    letter-spacing: .2rem;
+  }
+
+  &.sm {
+    height: 38px;
+    padding: 12px 20px 10px 20px;
+  }
+
+  &.lg {
+    height: 50px;
+  }
+
+  &:hover {
+    background-color: var(--btn-primary-hover)
+  }
+}

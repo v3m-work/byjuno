@@ -1,0 +1,27 @@
+nav {
+  display: grid;
+  width: 100%;
+  grid-gap: 20px;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.nav-item {
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  padding: .8rem 1rem;
+  background-color: var(--btn-primary);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--btn-primary-hover);
+  }
+}

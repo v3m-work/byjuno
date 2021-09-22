@@ -1,0 +1,8 @@
+@keyframes blink-animation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@-webkit-keyframes blink-animation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

@@ -1,0 +1,42 @@
+<form [formGroup]="loginForm" class="credit-card-wrap" (submit)="logIn()">
+  <div class="icon-world-map"></div>
+  <div class="credit-card-inner">
+    <header class="header">
+      <section class="credit-logo">
+        <div class="shape">
+          <span class="txt">BY</span>
+        </div>
+        <span class="text">ByJUNO PAYMENT CARD</span>
+      </section>
+    </header>
+    <div class="icon-sim"></div>
+    <div class="credit-card-number" data-text="0000">0000 0000 0000 0000</div>
+    <footer>
+      <section class="credit-card-date">
+        <span class="expires-title">Expires End</span>
+        <span class="expires-date">00/00</span>
+      </section>
+
+      <section class="login-field">
+        <div class="credit-font credit-author">ByJUNO USER</div>
+        <input type="password"
+               autofocus
+               (input)="authError && resetAuthError()"
+               [class.error]="(loginForm.invalid && loginForm.touched) || authError"
+               formControlName="card"
+               maxlength="4" #codeField/>
+
+        <span class="attention">< PIN CODE ****</span>
+      </section>
+    </footer>
+  </div>
+
+
+  <app-button class="login-btn"
+              text="login"
+              [disabled]="busy || (loginForm.invalid && loginForm.touched) || authError"></app-button>
+
+  <span class="login-error" *ngIf="authError">Error: Wrong Card PIN!!!!</span>
+  <span class="login-error" *ngIf="form.card.errors && loginForm.touched">{{form.card.errors | json}}</span>
+</form>
+
