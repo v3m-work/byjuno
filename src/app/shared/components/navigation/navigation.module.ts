@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavigationComponent } from './navigation.component';
 import { RouterModule } from "@angular/router";
 import { ButtonModule } from "../ui/button/button.module";
+import { TranslateModule } from "@ngx-translate/core";
 
 
 
@@ -14,6 +15,7 @@ import { ButtonModule } from "../ui/button/button.module";
     CommonModule,
     RouterModule,
     ButtonModule,
+    TranslateModule
   ],
   exports: [NavigationComponent]
 })

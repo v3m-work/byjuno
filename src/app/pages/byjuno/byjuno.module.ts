@@ -8,6 +8,7 @@ import { ButtonModule } from "../../shared/components/ui/button/button.module";
 import { TransactionsModule } from "./pages/transactions/transactions.module";
 import { BalanceModule } from "./pages/balance/balance.module";
 import { LanguageModule } from "./pages/language/language.module";
+import { TranslateModule } from "@ngx-translate/core";
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { LanguageModule } from "./pages/language/language.module";
     TransactionsModule,
     BalanceModule,
     LanguageModule,
+    TranslateModule
   ],
   exports: [ByjunoComponent]
 })

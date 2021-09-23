@@ -1,6 +1,6 @@
 <nav>
   <app-button size="lg"
               *ngFor="let item of navItems"
-              [routerLink]="[item.router]">{{item.name}}</app-button>
+              [routerLink]="[item.router]">{{ 'NAVBAR.'+item.name | uppercase | translate}}</app-button>
   <ng-content></ng-content>
 </nav>

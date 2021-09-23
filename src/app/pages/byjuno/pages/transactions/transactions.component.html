@@ -1,20 +1,22 @@
-<h1>Transactions:</h1>
+<h1>{{ 'TRANSACTIONS_PAGE.TITLE' | translate}}:</h1>
 
 <section class="transactions" *ngIf="$transactions | async as transactions; else loading">
 
   <app-navigation *ngIf="transactions">
     <app-button *ngFor="let item of limitItems"
-                (click)="setLimit(item)">{{item}} <span>limit</span></app-button>
+                (click)="setLimit(item)">{{item}}
+      <span>{{ 'TRANSACTIONS_PAGE.LIMIT_BTN' | translate}}</span>
+    </app-button>
   </app-navigation>
 
   <table>
     <thead>
       <tr>
-        <th>Transaction ID</th>
-        <th>USER ID</th>
-        <th>TITLE</th>
-        <th>MONEY</th>
-        <th>COMPLETED</th>
+        <th>{{ 'TRANSACTIONS_PAGE.TABLE.TRANSACTION_ID' | translate}}</th>
+        <th>{{ 'TRANSACTIONS_PAGE.TABLE.USER_ID' | translate}}</th>
+        <th>{{ 'TRANSACTIONS_PAGE.TABLE.TITLE' | translate}}</th>
+        <th>{{ 'TRANSACTIONS_PAGE.TABLE.MONEY' | translate}}</th>
+        <th>{{ 'TRANSACTIONS_PAGE.TABLE.COMPLETED' | translate}}</th>
       </tr>
     </thead>
     <tbody>
@@ -32,7 +34,7 @@
 </section>
 
 <ng-template #loading>
-  <span class="loading">LOADING...</span>
+  <span class="loading">{{ 'TRANSACTIONS_PAGE.LOADING' | translate}}...</span>
 </ng-template>
 
 

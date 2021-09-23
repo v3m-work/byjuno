@@ -28,14 +28,16 @@
                maxlength="4"
                #codeField/>
 
-        <span class="attention">< PIN CODE ****</span>
+        <span class="attention">< {{'LOGIN_PAGE.PIN_CODE' | translate}} ****</span>
       </section>
     </footer>
   </div>
 
 
   <app-button class="login-btn"
-              [disabled]="busy || (loginForm.invalid && loginForm.touched) || authError">login</app-button>
+              [disabled]="busy || (loginForm.invalid && loginForm.touched) || authError">
+    {{'LOGIN_PAGE.LOGIN_BTN' | translate}}
+  </app-button>
 
   <span class="login-error" *ngIf="authError">Error: Wrong Card PIN!!!!</span>
   <span class="login-error" *ngIf="form.card.errors && loginForm.touched">{{form.card.errors | json}}</span>

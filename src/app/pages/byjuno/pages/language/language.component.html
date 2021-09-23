@@ -1,4 +1,4 @@
 <section>
-  <app-button>EN</app-button>
-  <app-button>RU</app-button>
+  <app-button (click)="setLanguage('en')">{{ 'LANGUAGE_PAGE.EN' | translate}}</app-button>
+  <app-button (click)="setLanguage('ru')">{{ 'LANGUAGE_PAGE.RU' | translate}}</app-button>
 </section>

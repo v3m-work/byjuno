@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { BalanceComponent } from './balance.component';
 import { NavigationModule } from "../../../../shared/components/navigation/navigation.module";
 import { ButtonModule } from "../../../../shared/components/ui/button/button.module";
+import { TranslateModule } from "@ngx-translate/core";
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { ButtonModule } from "../../../../shared/components/ui/button/button.mod
   imports: [
     CommonModule,
     NavigationModule,
-    ButtonModule
+    ButtonModule,
+    TranslateModule
   ],
   exports: [BalanceComponent]
 })

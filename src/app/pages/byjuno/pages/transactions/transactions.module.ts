@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TransactionsComponent } from './transactions.component';
 import { ButtonModule } from "../../../../shared/components/ui/button/button.module";
 import { NavigationModule } from "../../../../shared/components/navigation/navigation.module";
+import { TranslateModule } from "@ngx-translate/core";
 
 
 
@@ -14,6 +15,7 @@ import { NavigationModule } from "../../../../shared/components/navigation/navig
     CommonModule,
     ButtonModule,
     NavigationModule,
+    TranslateModule
   ],
   exports:[TransactionsComponent]
 })

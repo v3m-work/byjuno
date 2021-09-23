@@ -1,0 +1,32 @@
+{
+  "BALANCE_PAGE": {
+    "BALANCE_TITLE": "Balance",
+    "ADD_BTN": "Add"
+  },
+  "TRANSACTIONS_PAGE": {
+    "TITLE": "Transactions",
+    "LIMIT_BTN": "limit",
+    "LOADING": "Loading",
+    "TABLE": {
+      "TRANSACTION_ID": "Transaction ID",
+      "USER_ID": "User ID",
+      "TITLE": "Title",
+      "MONEY": "Money",
+      "COMPLETED": "Completed"
+    }
+  },
+  "LANGUAGE_PAGE": {
+    "EN": "en",
+    "RU": "ru"
+  },
+  "NAVBAR": {
+    "BALANCE": "balance",
+    "TRANSACTIONS": "transactions",
+    "LANGUAGE": "language",
+    "EXIT_BTN": "exit"
+  },
+  "LOGIN_PAGE": {
+    "LOGIN_BTN": "login",
+    "PIN_CODE": "PIN CODE"
+  }
+}
