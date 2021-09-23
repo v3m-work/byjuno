@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from "@angular/common";
 import { BalanceComponent } from './balance.component';
-
+import { NavigationModule } from "../../../../shared/components/navigation/navigation.module";
+import { ButtonModule } from "../../../../shared/components/ui/button/button.module";
 
 
 @NgModule({
@@ -9,7 +10,9 @@ import { BalanceComponent } from './balance.component';
     BalanceComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NavigationModule,
+    ButtonModule
   ],
   exports: [BalanceComponent]
 })

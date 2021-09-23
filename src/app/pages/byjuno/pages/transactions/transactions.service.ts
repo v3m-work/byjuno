@@ -14,7 +14,10 @@ export interface Transaction {
 })
 export class TransactionsService {
 
-  constructor(private api: ApiService) { }
+  limitButtons: number[] = [5, 10, 40, 100]
+
+  constructor(private api: ApiService) {
+  }
 
   getTransactions(): Observable<Transaction[]> {
     return this.api.get('todos');

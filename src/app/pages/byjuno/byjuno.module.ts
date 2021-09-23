@@ -6,8 +6,8 @@ import { RouterModule } from "@angular/router";
 import { ByJunoRoutingModule } from "./byjuno-routing.module";
 import { ButtonModule } from "../../shared/components/ui/button/button.module";
 import { TransactionsModule } from "./pages/transactions/transactions.module";
-
-
+import { BalanceModule } from "./pages/balance/balance.module";
+import { LanguageModule } from "./pages/language/language.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +19,9 @@ import { TransactionsModule } from "./pages/transactions/transactions.module";
     RouterModule,
     ByJunoRoutingModule,
     ButtonModule,
-    TransactionsModule
+    TransactionsModule,
+    BalanceModule,
+    LanguageModule,
   ],
   exports: [ByjunoComponent]
 })

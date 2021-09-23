@@ -1,7 +1,10 @@
 <section>
-  <h1>Balance:</h1>
- <div class="balance">
-   <span>Balance: 500Eur</span>
- </div>
+  <app-navigation>
+    <app-button *ngFor="let sum of moneySumArray"
+                (click)="addMoney(sum)"><span>Add</span> {{sum}}€</app-button>
+  </app-navigation>
 
+  <div class="info" *ngIf="balance$">
+    <span>Balance</span>: <span class="balance">{{balance$ | async }}</span> €(Euro)
+  </div>
 </section>

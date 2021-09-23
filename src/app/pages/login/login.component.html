@@ -21,10 +21,12 @@
         <div class="credit-font credit-author">ByJUNO USER</div>
         <input type="password"
                autofocus
+               tabindex="1"
                (input)="authError && resetAuthError()"
                [class.error]="(loginForm.invalid && loginForm.touched) || authError"
                formControlName="card"
-               maxlength="4" #codeField/>
+               maxlength="4"
+               #codeField/>
 
         <span class="attention">< PIN CODE ****</span>
       </section>
@@ -33,8 +35,7 @@
 
 
   <app-button class="login-btn"
-              text="login"
-              [disabled]="busy || (loginForm.invalid && loginForm.touched) || authError"></app-button>
+              [disabled]="busy || (loginForm.invalid && loginForm.touched) || authError">login</app-button>
 
   <span class="login-error" *ngIf="authError">Error: Wrong Card PIN!!!!</span>
   <span class="login-error" *ngIf="form.card.errors && loginForm.touched">{{form.card.errors | json}}</span>

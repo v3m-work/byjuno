@@ -2,5 +2,7 @@
         [ngClass]="[size]"
         [disabled]="disabled"
         type="submit">
-  <span>{{text}}</span>
+  <span>
+    <ng-content></ng-content>
+  </span>
 </button>

@@ -1,0 +1,17 @@
+section {
+  display: grid;
+  width: 100%;
+}
+.info {
+  padding-top: 100px;
+  font-size: 2rem;
+
+  span {
+    font-size: 2rem;
+  }
+}
+
+.balance {
+  font-weight: 600;
+  color: var(--success-color);
+}

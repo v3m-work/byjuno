@@ -10,9 +10,9 @@ import { AuthService } from "../../shared/services/auth.service";
 export class ByjunoComponent implements OnInit {
 
   navItems: NavItem[] = [
-    {name: 'balance', router: '/balance'},
+    {name: 'balance', router: 'balance'},
     {name: 'transactions', router: 'transactions'},
-    {name: 'en', router: ''},
+    {name: 'language', router: 'language'},
   ]
 
   constructor(private auth: AuthService) {

@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ByjunoComponent } from "./byjuno.component";
 import { TransactionsComponent } from "./pages/transactions/transactions.component";
 import { BalanceComponent } from "./pages/balance/balance.component";
+import { LanguageComponent } from "./pages/language/language.component";
 
 const routes: Routes = [
   {
@@ -12,16 +13,20 @@ const routes: Routes = [
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: 'transactions',
+        redirectTo: 'balance',
+      },
+      {
+        path: 'balance',
+        component: BalanceComponent
       },
       {
         path: 'transactions',
         component: TransactionsComponent
       },
       {
-        path: 'balance',
-        component: BalanceComponent
-      }
+        path: 'language',
+        component: LanguageComponent
+      },
     ]
   },
 ];

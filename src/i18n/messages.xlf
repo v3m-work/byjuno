@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7402058629983621427" datatype="html">
+        <source>exit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/byjuno.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3249513483374643425" datatype="html">
+        <source>Add</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/balance/balance.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6888797559367695264" datatype="html">
+        <source>Balance</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/balance/balance.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2543576200303881948" datatype="html">
+        <source>Transactions:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5653531963388315526" datatype="html">
+        <source>limit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3500863025421875208" datatype="html">
+        <source>Transaction ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8720517001518582305" datatype="html">
+        <source>USER ID</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8979531771736981288" datatype="html">
+        <source>TITLE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9213531144475581102" datatype="html">
+        <source>MONEY</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8716443735317407047" datatype="html">
+        <source>COMPLETED</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="772965024565492763" datatype="html">
+        <source>LOADING...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/byjuno/pages/transactions/transactions.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{item.name}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/shared/components/navigation/navigation.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

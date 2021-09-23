@@ -18,7 +18,7 @@ import { HttpClientModule } from "@angular/common/http";
     NavigationModule,
     ByjunoModule,
     LoginModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

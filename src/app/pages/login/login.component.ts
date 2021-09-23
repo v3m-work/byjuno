@@ -59,7 +59,9 @@ export class LoginComponent implements OnInit, AfterViewInit {
       )
       .subscribe(
         (success) => this.auth.logIn(),
-        (err) => this.authError = true
+        (err) => {
+          this.authError = true
+        }
       );
   }
 

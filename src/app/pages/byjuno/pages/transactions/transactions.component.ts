@@ -9,15 +9,23 @@ import { Observable } from "rxjs";
 })
 export class TransactionsComponent implements OnInit {
   $transactions: Observable<Transaction[]> = new Observable<Transaction[]>();
+  limitItems: number[] = [];
+  listLimit = 40;
 
-  constructor(private taService: TransactionsService) { }
+  constructor(private taService: TransactionsService) {
+  }
 
   ngOnInit(): void {
+    this.limitItems = this.taService.limitButtons;
     this.getTransactions();
   }
 
   private getTransactions() {
     this.$transactions = this.taService.getTransactions();
+  }
+
+  setLimit(qty: number) {
+    this.listLimit = qty;
   }
 
 }

@@ -1,9 +1,9 @@
-//.transactions {
-//  display: flex;
-//  flex-direction: column;
-//  position: relative;
-//  overflow: scroll;
-//}
+:host {
+  display: grid;
+  min-height: 600px;
+  justify-content: center;
+  align-content: start;
+}
 
 table {
   position: relative;
@@ -13,11 +13,11 @@ table {
   min-width: 100%;
   margin-top: 10px;
   grid-template-columns:
-    minmax(100px, 1fr)
-    minmax(100px, 1fr)
-    minmax(100px, 3fr)
-    minmax(100px, 1fr)
-    minmax(100px, 1fr);
+    minmax(70px, 1fr)
+    minmax(70px, 1fr)
+    minmax(70px, 3fr)
+    minmax(70px, 1fr)
+    minmax(70px, 1fr);
   overflow: scroll;
 }
 
@@ -54,5 +54,6 @@ tr:nth-child(even) td {
 }
 
 .success {
-  color: seagreen;
+  color: var(--success-color);
 }
+
