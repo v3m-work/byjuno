@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@use "assets/styles/main";
+
+* {
+  margin: 0;
+  bottom: 0;
+  font-family: Roboto, Arial, serif;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: normal;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: -webkit-linear-gradient(to right, #fdc830, #f37335);
+  background: linear-gradient(to right, #fdc830, #f37335);
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    font-size: 10px;
+  }
+}

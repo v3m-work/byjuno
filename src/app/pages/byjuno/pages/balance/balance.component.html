@@ -1,0 +1,10 @@
+<section>
+  <app-navigation>
+    <app-button *ngFor="let sum of moneySumArray"
+                (click)="addMoney(sum)"><span>{{ "BALANCE_PAGE.ADD_BTN" | translate }}</span> {{sum}}€</app-button>
+  </app-navigation>
+
+  <div class="info" *ngIf="balance$">
+    <span>{{ "BALANCE_PAGE.BALANCE_TITLE" | translate }}</span>: <span class="balance">{{balance$ | async }}</span> €(Euro)
+  </div>
+</section>

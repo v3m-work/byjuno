@@ -1,0 +1,32 @@
+{
+  "BALANCE_PAGE": {
+    "BALANCE_TITLE": "Баланс",
+    "ADD_BTN": "Добавить"
+  },
+  "TRANSACTIONS_PAGE": {
+    "TITLE": "Платежи",
+    "LIMIT_BTN": "лимит",
+    "LOADING": "Загрузка",
+    "TABLE": {
+      "TRANSACTION_ID": "ID Платежа",
+      "USER_ID": "ID Ползователья",
+      "TITLE": "Описание",
+      "MONEY": "Сумма",
+      "COMPLETED": "Завершен"
+    }
+  },
+  "LANGUAGE_PAGE": {
+    "EN": "Английский",
+    "RU": "Русский"
+  },
+  "NAVBAR": {
+    "BALANCE": "баланс",
+    "TRANSACTIONS": "платежи",
+    "LANGUAGE": "язык",
+    "EXIT_BTN": "выход"
+  },
+  "LOGIN_PAGE": {
+    "LOGIN_BTN": "вход",
+    "PIN_CODE": "ПИН КОД"
+  }
+}

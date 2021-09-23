@@ -1,0 +1,7 @@
+<app-navigation [navItems]="navItems">
+  <app-button size="lg" (click)="logOut()">{{ 'NAVBAR.EXIT_BTN' | translate}}</app-button>
+</app-navigation>
+
+<section>
+  <router-outlet></router-outlet>
+</section>
